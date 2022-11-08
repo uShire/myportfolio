@@ -1,0 +1,110 @@
+$colors: (
+  "dark": $clr-dark,
+  "light": $clr-light,
+  "blue": $clr-blue,
+  "mint": $clr-mint,
+  "yellow": $clr-yellow,
+  "floral": $clr-floral,
+  "salmon": $clr-salmon,
+  "transparent": $transparent,
+);
+
+@each $key, $val in $colors {
+  .bg {
+    &--#{$key} {
+      background-color: $val;
+    }
+  }
+  .text {
+    &--#{$key} {
+      color: $val;
+    }
+  }
+  .hvr {
+    &--#{$key} {
+      &:hover {
+        color: $val;
+      }
+    }
+  }
+  .btn.bg--#{$key} {
+    @include btn($val);
+  }
+  .btn2.bg--#{$key} {
+    @include btn2($val);
+  }
+  // .btn3.bg--#{$key} {
+  //   @include btn3($val);
+  // }
+  // .btnsearch.bg--#{$key} {
+  //   @include btnsearch($val);
+  // }
+  // .btntrans.bg--#{$key} {
+  //   @include btntrans($val);
+  // }
+}
+$displays: flex, inline-block, block, inline, grid;
+
+@each $display in $displays {
+  .d {
+    &--#{$display} {
+      display: $display;
+    }
+  }
+}
+
+$align: (
+  "center": center,
+  "left": left,
+  "right": right,
+  "justify": justify,
+);
+
+@each $key, $val in $align {
+  .align {
+    &--#{$key} {
+      align-items: $val;
+    }
+  }
+  .text {
+    &--#{$key} {
+      text-align: $val;
+    }
+  }
+}
+
+$justify: (
+  "start": flex-start,
+  "center": center,
+  "end": flex-end,
+  "between": space-between,
+  "around": space-around,
+);
+@each $key, $val in $justify {
+  .justify {
+    &--#{$key} {
+      justify-content: $val;
+    }
+  }
+}
+
+@for $i from 1 through 20 {
+  .mb--#{$i} {
+    margin-bottom: $i + rem;
+  }
+  .mt--#{$i} {
+    margin-top: $i + rem;
+  }
+  .mr--#{$i} {
+    margin-right: $i + rem;
+  }
+  .ml--#{$i} {
+    margin-left: $i + rem;
+  }
+  .py--#{$i} {
+    padding: $i + rem 0;
+  }
+  .px--#{$i} {
+    padding: 0 $i + rem;
+  }
+}
