@@ -1,5 +1,6 @@
 $colors: (
   "dark": $clr-dark,
+  "gray": $clr-gray,
   "light": $clr-light,
   "blue": $clr-blue,
   "mint": $clr-mint,
@@ -30,18 +31,6 @@ $colors: (
   .btn.bg--#{$key} {
     @include btn($val);
   }
-  .btn2.bg--#{$key} {
-    @include btn2($val);
-  }
-  // .btn3.bg--#{$key} {
-  //   @include btn3($val);
-  // }
-  // .btnsearch.bg--#{$key} {
-  //   @include btnsearch($val);
-  // }
-  // .btntrans.bg--#{$key} {
-  //   @include btntrans($val);
-  // }
 }
 $displays: flex, inline-block, block, inline, grid;
 

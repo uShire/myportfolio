@@ -1,5 +1,5 @@
 @mixin mediaQuery($width: 48rem) {
-  @media screen and (max-width: $width) {
+  @media screen and (min-width: $width) {
     @content;
   }
 }
@@ -21,27 +21,6 @@
   font-weight: 600;
   display: inline-block;
   background: $bg;
-  i {
-    color: $clr-light;
-    padding-right: 1rem;
-  }
-  &:hover {
-    background: darken($bg, 10);
-  }
-}
-
-@mixin btn2($bg) {
-  padding: 1rem 1.6rem;
-  border-radius: 2rem;
-  border: 2px solid $clr-light;
-  color: $clr-blue;
-  font-size: 1.5rem;
-  font-weight: 600;
-  display: inline-block;
-  background: $bg;
-  &:hover {
-    background: darken($bg, 10);
-  }
 }
 
 @mixin grid($cols: 1, $gap: 1rem) {
