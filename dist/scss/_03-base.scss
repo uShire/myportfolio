@@ -1,7 +1,10 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
-  scroll-padding-top: 7rem;
+  scroll-padding-top: 10rem;
+  @media screen and (min-width: 500px) {
+    scroll-padding-top: 0rem;
+  }
 }
 
 body {
@@ -9,4 +12,8 @@ body {
   font-family: $ff-primary;
   line-height: 1.4;
   color: $clr-dark;
+}
+
+section {
+  height: 100vh;
 }

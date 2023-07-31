@@ -12,17 +12,6 @@
   display: block;
 }
 
-@mixin btn($bg) {
-  padding: 1rem 1.5rem;
-  // border-radius: 2rem;
-  // border: 2px solid $clr-light;
-  color: $clr-light;
-  font-size: 1.5rem;
-  font-weight: 600;
-  display: inline-block;
-  background: $bg;
-}
-
 @mixin grid($cols: 1, $gap: 1rem) {
   display: grid;
   grid-template-columns: repeat($cols, 1fr);

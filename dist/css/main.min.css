@@ -4,9 +4,21 @@
   padding: 0;
 }
 
+section {
+  max-width: 100vw;
+}
+@media screen and (min-width: 1080px) {
+  section {
+    max-width: 85vw;
+    height: 100vh;
+    width: 100%;
+    float: right;
+  }
+}
+
 a {
   text-decoration: none;
-  color: hsl(0deg, 0%, 13%);
+  color: hsl(0, 0%, 13%);
 }
 
 ul {
@@ -16,14 +28,23 @@ ul {
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
-  scroll-padding-top: 7rem;
+  scroll-padding-top: 10rem;
+}
+@media screen and (min-width: 500px) {
+  html {
+    scroll-padding-top: 0rem;
+  }
 }
 
 body {
   font-size: 1.6rem;
   font-family: Homenaje;
   line-height: 1.4;
-  color: hsl(0deg, 0%, 13%);
+  color: hsl(0, 0%, 13%);
+}
+
+section {
+  height: 100vh;
 }
 
 .container {
@@ -34,171 +55,99 @@ body {
 }
 
 .bg--dark {
-  background-color: hsl(0deg, 0%, 13%);
+  background-color: hsl(0, 0%, 13%);
 }
 
 .text--dark {
-  color: hsl(0deg, 0%, 13%);
+  color: hsl(0, 0%, 13%);
 }
 
 .hvr--dark:hover {
-  color: hsl(0deg, 0%, 13%);
-}
-
-.btn.bg--dark {
-  padding: 1rem 1.5rem;
-  color: hsl(0deg, 0%, 100%);
-  font-size: 1.5rem;
-  font-weight: 600;
-  display: inline-block;
-  background: hsl(0deg, 0%, 13%);
+  color: hsl(0, 0%, 13%);
 }
 
 .bg--gray {
-  background-color: hsl(0deg, 0%, 35%);
+  background-color: hsl(0, 0%, 35%);
 }
 
 .text--gray {
-  color: hsl(0deg, 0%, 35%);
+  color: hsl(0, 0%, 35%);
 }
 
 .hvr--gray:hover {
-  color: hsl(0deg, 0%, 35%);
-}
-
-.btn.bg--gray {
-  padding: 1rem 1.5rem;
-  color: hsl(0deg, 0%, 100%);
-  font-size: 1.5rem;
-  font-weight: 600;
-  display: inline-block;
-  background: hsl(0deg, 0%, 35%);
+  color: hsl(0, 0%, 35%);
 }
 
 .bg--light {
-  background-color: hsl(0deg, 0%, 100%);
+  background-color: hsl(0, 0%, 100%);
 }
 
 .text--light {
-  color: hsl(0deg, 0%, 100%);
+  color: hsl(0, 0%, 100%);
 }
 
 .hvr--light:hover {
-  color: hsl(0deg, 0%, 100%);
-}
-
-.btn.bg--light {
-  padding: 1rem 1.5rem;
-  color: hsl(0deg, 0%, 100%);
-  font-size: 1.5rem;
-  font-weight: 600;
-  display: inline-block;
-  background: hsl(0deg, 0%, 100%);
+  color: hsl(0, 0%, 100%);
 }
 
 .bg--blue {
-  background-color: hsl(196deg, 64%, 37%);
+  background-color: hsl(196, 64%, 37%);
 }
 
 .text--blue {
-  color: hsl(196deg, 64%, 37%);
+  color: hsl(196, 64%, 37%);
 }
 
 .hvr--blue:hover {
-  color: hsl(196deg, 64%, 37%);
-}
-
-.btn.bg--blue {
-  padding: 1rem 1.5rem;
-  color: hsl(0deg, 0%, 100%);
-  font-size: 1.5rem;
-  font-weight: 600;
-  display: inline-block;
-  background: hsl(196deg, 64%, 37%);
+  color: hsl(196, 64%, 37%);
 }
 
 .bg--mint {
-  background-color: hsl(174deg, 79%, 43%);
+  background-color: hsl(174, 79%, 43%);
 }
 
 .text--mint {
-  color: hsl(174deg, 79%, 43%);
+  color: hsl(174, 79%, 43%);
 }
 
 .hvr--mint:hover {
-  color: hsl(174deg, 79%, 43%);
-}
-
-.btn.bg--mint {
-  padding: 1rem 1.5rem;
-  color: hsl(0deg, 0%, 100%);
-  font-size: 1.5rem;
-  font-weight: 600;
-  display: inline-block;
-  background: hsl(174deg, 79%, 43%);
+  color: hsl(174, 79%, 43%);
 }
 
 .bg--yellow {
-  background-color: hsl(37deg, 100%, 73%);
+  background-color: hsl(37, 100%, 73%);
 }
 
 .text--yellow {
-  color: hsl(37deg, 100%, 73%);
+  color: hsl(37, 100%, 73%);
 }
 
 .hvr--yellow:hover {
-  color: hsl(37deg, 100%, 73%);
-}
-
-.btn.bg--yellow {
-  padding: 1rem 1.5rem;
-  color: hsl(0deg, 0%, 100%);
-  font-size: 1.5rem;
-  font-weight: 600;
-  display: inline-block;
-  background: hsl(37deg, 100%, 73%);
+  color: hsl(37, 100%, 73%);
 }
 
 .bg--floral {
-  background-color: hsl(40deg, 88%, 97%);
+  background-color: hsl(40, 88%, 97%);
 }
 
 .text--floral {
-  color: hsl(40deg, 88%, 97%);
+  color: hsl(40, 88%, 97%);
 }
 
 .hvr--floral:hover {
-  color: hsl(40deg, 88%, 97%);
-}
-
-.btn.bg--floral {
-  padding: 1rem 1.5rem;
-  color: hsl(0deg, 0%, 100%);
-  font-size: 1.5rem;
-  font-weight: 600;
-  display: inline-block;
-  background: hsl(40deg, 88%, 97%);
+  color: hsl(40, 88%, 97%);
 }
 
 .bg--salmon {
-  background-color: hsl(358deg, 99%, 71%);
+  background-color: hsl(358, 99%, 71%);
 }
 
 .text--salmon {
-  color: hsl(358deg, 99%, 71%);
+  color: hsl(358, 99%, 71%);
 }
 
 .hvr--salmon:hover {
-  color: hsl(358deg, 99%, 71%);
-}
-
-.btn.bg--salmon {
-  padding: 1rem 1.5rem;
-  color: hsl(0deg, 0%, 100%);
-  font-size: 1.5rem;
-  font-weight: 600;
-  display: inline-block;
-  background: hsl(358deg, 99%, 71%);
+  color: hsl(358, 99%, 71%);
 }
 
 .bg--transparent {
@@ -211,15 +160,6 @@ body {
 
 .hvr--transparent:hover {
   color: transparent;
-}
-
-.btn.bg--transparent {
-  padding: 1rem 1.5rem;
-  color: hsl(0deg, 0%, 100%);
-  font-size: 1.5rem;
-  font-weight: 600;
-  display: inline-block;
-  background: transparent;
 }
 
 .d--flex {
@@ -775,187 +715,118 @@ body {
 }
 
 .banner {
-  background: hsl(0deg, 0%, 35%);
-  position: relative;
-  z-index: -1;
-  padding-bottom: 5rem;
-  padding-top: 8rem;
-  width: 100%;
-  margin-top: -10rem;
+  padding: 13rem 1.5rem 4rem 1.5rem;
+  background: hsl(0, 0%, 13%);
 }
 .banner img {
-  width: 30rem;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-fit: center center;
-     object-fit: center center;
-  display: block;
-  margin: 0 auto;
-}
-.banner img.desktop {
   display: none;
 }
-.banner img.box {
-  display: none;
-}
-.banner__text .banner__name {
+.banner__content {
   text-align: center;
 }
-.banner__text .banner__name h1 {
-  color: hsl(358deg, 99%, 71%);
+.banner__content a {
+  width: 80%;
+}
+.banner__content ul.social {
+  display: none;
+}
+.banner__name {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+.banner__name h1 {
+  color: hsl(358, 99%, 71%);
   font-size: 5rem;
 }
-.banner__text .banner__name h3 {
-  color: hsl(40deg, 88%, 97%);
-  font-size: 2rem;
+.banner__name h3 {
+  color: hsl(0, 0%, 100%);
   font-weight: 100;
 }
-.banner__text .banner__name h3 span {
-  color: hsl(358deg, 99%, 71%);
+.banner__name h3 span {
+  color: hsl(174, 79%, 43%);
 }
-.banner__text .banner__desc {
+.banner__text {
   margin: 0 2rem;
-  margin-top: 3rem;
-  text-align: center;
 }
-.banner__text .banner__desc p {
-  color: hsl(40deg, 88%, 97%);
-  font-size: 1.8rem;
-  text-align: left;
-  margin-bottom: 2rem;
+.banner__text p {
+  color: hsl(40, 88%, 97%);
+  font-size: 2rem;
 }
-.banner__text .banner__desc p span {
-  color: hsl(174deg, 79%, 43%);
+.banner__text p span {
+  color: hsl(174, 79%, 43%);
 }
-.banner__text .banner__desc a {
-  font-size: 1.8rem !important;
-  font-weight: 100;
-  z-index: 999;
+.banner__text p:last-child {
+  margin: 2rem 0;
 }
-.banner__text .banner__desc a:hover {
-  background: darkmagenta;
-}
-@media screen and (min-width: 480px) {
-  .banner__wrapper {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-gap: 0rem;
-    align-items: center;
-  }
-  .banner figure {
+@media screen and (min-width: 1080px) {
+  .banner {
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
   }
-  .banner figure img {
-    width: 55rem;
-    height: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-    -o-object-fit: center center;
-       object-fit: center center;
+  .banner img {
     display: block;
-  }
-  .banner figure img.desktop {
-    display: block;
-  }
-  .banner figure img.box {
-    display: block;
+    width: 60rem;
     position: absolute;
-    top: 30%;
-    left: -55rem;
-    height: 50rem;
-    width: 113rem;
-    border-top-right-radius: 10rem;
-    border-bottom-right-radius: 10rem;
-    z-index: -1;
-    box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.5);
+    bottom: 0;
+    left: 10rem;
   }
-  .banner figure img.mobile {
-    display: none;
+  .banner a.btn {
+    margin-top: 5rem;
+    font-size: 2.5rem;
   }
-  .banner figure::before {
-    content: "";
-    width: 0.1rem;
-    height: 40rem;
-    background: hsl(174deg, 79%, 43%);
-    position: absolute;
-    background-color: hsl(174deg, 79%, 43%);
-    top: 30%;
-    right: 5rem;
+  .banner__content {
+    max-width: 70rem;
+    margin: 0 10rem;
+    display: flex;
+    align-items: center;
+    gap: 5rem;
   }
-  .banner__text .banner__name h1 {
+  .banner__content p {
+    text-align: justify;
+  }
+  .banner__content ul.social {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+  }
+  .banner__content ul.social li a {
+    font-size: 3rem;
+    color: hsl(0, 0%, 13%);
+  }
+  .banner__content ul.social li:nth-child(2) {
+    margin: 0 4rem;
+  }
+  .banner__content ul.social li:hover {
+    transform: scale(1.1);
+  }
+  .banner__name h1 {
     font-size: 10rem;
   }
-  .banner__text .banner__name h3 {
-    font-size: 4rem;
+  .banner__text {
+    text-align: center;
   }
-  .banner__text .banner__desc p {
-    color: hsl(40deg, 88%, 97%);
+  .banner__text p {
     font-size: 2.5rem;
-    text-align: left;
-    margin-bottom: 2rem;
-  }
-  .banner__text .banner__desc p span {
-    color: hsl(174deg, 79%, 43%);
-  }
-  .banner__text .banner__desc a {
-    font-size: 2.5rem !important;
-    font-weight: 100;
-    width: 30%;
   }
 }
 
-.services {
+.works {
+  background: hsl(0, 0%, 13%);
+  padding: 5rem 1.5rem;
   position: relative;
+}
+.works h1 {
+  font-size: 5rem;
+  text-align: center;
+  color: hsl(196, 64%, 37%);
+}
+.works__item {
   padding: 5rem 0;
 }
-.services .tns-controls {
-  display: flex;
-}
-.services .tns-controls button {
-  position: absolute;
-  top: 50%;
-  z-index: 999;
-  background-color: hsl(358deg, 99%, 71%);
-  border-color: hsl(358deg, 99%, 71%);
-}
-.services .tns-controls button:last-child {
-  right: 2rem;
-}
-.services .tns-controls button:first-child {
-  left: 2rem;
-}
-.services__title {
-  background: hsl(0deg, 0%, 13%);
-  max-width: 30rem;
-  border-top-right-radius: 10rem;
-  border-bottom-right-radius: 10rem;
-}
-.services__title h1 {
-  margin: 0 5rem;
-  margin-top: -7rem;
-  text-align: right;
-  color: hsl(0deg, 0%, 100%);
-  font-weight: 100;
-  font-size: 3.5rem;
-}
-.services__item {
-  padding-top: 3rem;
-}
-.services__item .services__categ {
-  margin-left: 2rem;
-}
-.services__item .services__categ h3 {
-  font-size: 2.5rem;
-  border-bottom: 2px solid hsl(358deg, 99%, 71%);
-  max-width: 20rem;
-  text-align: center;
-}
-.services__item .services__img {
-  margin: 3rem 0;
-}
-.services__item .services__img img {
-  width: 25rem;
+.works__item img {
+  width: 40rem;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -964,40 +835,251 @@ body {
   display: block;
   margin: 0 auto;
 }
-.services__item .services__text h4 {
-  font-size: 2rem;
-  font-weight: 100;
+.works__item h2 {
+  color: hsl(0, 0%, 100%);
+  font-size: 3rem;
+  margin-top: 2rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-bottom: 1px solid hsl(174, 79%, 43%);
+}
+.works__item h2 a {
+  display: inline-block;
+  color: hsl(174, 79%, 43%);
+  text-decoration: underline;
+  font-size: 1.5rem;
+  margin-left: 1rem;
+}
+.works__item h2 a:hover {
+  text-decoration: none;
+}
+.works__item__text {
+  text-align: center;
+  margin: 2rem 0;
+}
+.works__item__text p {
+  color: hsl(40, 88%, 97%);
+  text-align: justify;
+  margin-top: 2rem;
+}
+.works .tns-outer [data-action] {
+  display: none;
+}
+.works .tns-outer .tns-nav {
+  position: absolute;
+  bottom: 5rem;
+  z-index: 999;
+}
+.works .tns-outer .tns-controls {
+  position: absolute;
+  bottom: 50%;
+  width: 92%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 999;
+  display: none;
+}
+.works .tns-outer .tns-controls button {
+  background: none;
+  border: none;
+  color: hsl(0, 0%, 100%);
+  font-size: 4rem;
+}
+.works .tns-nav .tns-nav-active {
+  background-color: hsl(358, 99%, 71%);
 }
 
-.header__nav {
-  background: hsl(0deg, 0%, 13%);
-  max-width: 40rem;
-  padding: 2rem 5rem;
-  margin: 0 auto;
-  box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.5);
-  border-radius: 2rem;
+.header {
+  background: hsl(0, 0%, 13%);
+  position: relative;
+  position: fixed;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+  padding: 1.5rem;
+  z-index: 999;
 }
-.header__nav ul {
+.header__wrapper {
   display: flex;
-  justify-content: center;
+  align-items: center;
   justify-content: space-between;
 }
-.header__nav ul li a {
-  color: hsl(0deg, 0%, 100%);
+.header .branding img {
+  width: 10rem;
+}
+.header__nav {
+  position: relative;
+  position: absolute;
+  background: hsl(0, 0%, 13%);
+  max-height: 0rem;
+  overflow: hidden;
+  top: 10rem;
+  right: 0;
+  width: 100%;
+  text-align: center;
+  transition: 0.5s ease;
+}
+.header__nav.open {
+  max-height: 50rem;
+  transition: 0.5s ease;
+}
+.header__nav ul.nav {
+  margin-top: 3rem;
+}
+.header__nav ul.nav li {
+  padding: 2rem 0;
+  cursor: pointer;
+}
+.header__nav ul.nav li a {
+  color: hsl(0, 0%, 100%);
+  font-size: 3rem;
+  padding: 1rem;
+}
+.header__nav ul.nav li:hover {
+  transform: scale(1.1);
+}
+.header__nav ul.nav li:hover a {
+  color: hsl(358, 99%, 71%);
+}
+.header__nav ul.nav li.active a {
+  border-top: 2px solid hsl(358, 99%, 71%);
+  border-bottom: 2px solid hsl(358, 99%, 71%);
+}
+.header__nav ul.social {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+  border-top: 1px solid hsl(196, 64%, 37%);
+}
+.header__nav ul.social li a {
   font-size: 2rem;
-  border-bottom: 1px solid transparent;
+  color: hsl(0, 0%, 100%);
 }
-.header__nav ul li:hover a {
-  border-bottom: 1px solid hsl(358deg, 99%, 71%);
+.header__nav ul.social li:nth-child(2) {
+  margin: 0 4rem;
 }
-@media screen and (min-width: 480px) {
-  .header__nav {
-    margin-top: -2rem;
-    max-width: 60rem;
-    border-top-left-radius: 0rem;
-    border-top-right-radius: 0rem;
+.header__nav ul.social li:hover a#envelope {
+  color: #e8bb4d;
+}
+.header__nav ul.social li:hover a#linked {
+  color: #0077b5;
+}
+.header__nav ul.social li:hover a#phone {
+  color: #03c04a;
+}
+.header__social {
+  display: none;
+  width: 100%;
+}
+.header__social ul.social {
+  display: flex;
+  justify-content: center;
+  padding: 2rem 0;
+  border-top: 1px solid hsl(196, 64%, 37%);
+}
+.header__social ul.social li a {
+  font-size: 2rem;
+  color: hsl(0, 0%, 100%);
+}
+.header__social ul.social li:nth-child(2) {
+  margin: 0 4rem;
+}
+.header .toggle__menu span {
+  width: 3rem;
+  height: 0.2rem;
+  display: block;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 5rem;
+  transition: 0.5s ease;
+}
+.header .toggle__menu span:nth-child(2) {
+  margin: 0.5rem 0;
+}
+.header .toggle__menu.open span:first-child {
+  transform: translate(0, 10px) rotate(225deg);
+  transition: 0.5s ease;
+}
+.header .toggle__menu.open span:nth-child(2) {
+  opacity: 0;
+  transition: 0.5s ease;
+}
+.header .toggle__menu.open span:last-child {
+  transform: translate(0, -4px) rotate(-225deg);
+  transition: 0.5s ease;
+}
+@media screen and (min-width: 1080px) {
+  .header {
+    max-width: 15vw;
+    text-align: center;
   }
-  .header__nav ul li a {
+  .header .toggle__menu {
+    display: none;
+  }
+  .header__wrapper {
+    flex-direction: column;
+    height: 100vh;
+  }
+  .header .branding {
+    padding-top: 5rem;
+  }
+  .header .branding img {
+    width: 15rem;
+  }
+  .header__nav {
+    position: unset;
+    max-height: unset;
+    width: 100%;
+  }
+  .header__nav ul.nav {
+    gap: 6rem;
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .header__nav ul.nav li a {
+    font-size: 4rem;
+  }
+  .header__nav ul.nav li.active a {
+    border-top: 0;
+  }
+  .header__nav ul.nav li.active:hover a {
+    color: hsl(0, 0%, 100%);
+  }
+  .header__nav ul.social {
+    display: none;
+  }
+  .header__social {
+    display: block;
+  }
+  .header__social ul.social {
+    padding: 3rem 0;
+  }
+  .header__social ul.social li a {
     font-size: 3rem;
   }
+  .header__social ul.social li:hover a#envelope {
+    color: #e8bb4d;
+  }
+  .header__social ul.social li:hover a#linked {
+    color: #0077b5;
+  }
+  .header__social ul.social li:hover a#phone {
+    color: #03c04a;
+  }
+}
+
+.btn {
+  display: inline-block;
+  padding: 1.5rem;
+  border: 1px solid transparent;
+}
+.btn.bg--blue {
+  color: hsl(0, 0%, 100%);
+  font-size: 2rem;
+  background: hsl(196, 64%, 37%);
+}
+.btn.bg--blue:hover {
+  background: hsl(0, 0%, 100%);
+  color: hsl(196, 64%, 37%);
+  border: 1px solid hsl(196, 64%, 37%);
 }/*# sourceMappingURL=main.min.css.map */

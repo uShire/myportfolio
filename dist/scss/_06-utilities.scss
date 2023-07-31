@@ -28,9 +28,6 @@ $colors: (
       }
     }
   }
-  .btn.bg--#{$key} {
-    @include btn($val);
-  }
 }
 $displays: flex, inline-block, block, inline, grid;
 

@@ -1,0 +1,17 @@
+.btn {
+  display: inline-block;
+  padding: 1.5rem;
+  border: 1px solid transparent;
+  &.bg {
+    &--blue {
+      color: $clr-light;
+      font-size: 2rem;
+      background: $clr-blue;
+      &:hover {
+        background: $clr-light;
+        color: $clr-blue;
+        border: 1px solid $clr-blue;
+      }
+    }
+  }
+}
